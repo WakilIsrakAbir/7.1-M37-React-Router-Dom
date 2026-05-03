@@ -5,11 +5,12 @@ const UserDatails = () => {
 
     const user = useLoaderData();
 
-    const { website } = user;
+    const { website,name } = user;
     return (
         <div>
             <h2>Hello From User Details</h2>
-            <p>Website:{website}</p>
+            <h5>Name: {name} </h5>
+            <p>Website: {website}</p>
         </div>
     );
 };
