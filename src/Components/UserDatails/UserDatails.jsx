@@ -4,8 +4,10 @@ import { useLoaderData, useParams } from 'react-router';
 const UserDatails = () => {
 
     const user = useLoaderData();
-    const params = useParams();
-    console.log(params);
+    const {userId} = useParams();
+    console.log(userId);
+    // const params = useParams();
+    // console.log(params);
 
     const { website,name } = user;
     return (
